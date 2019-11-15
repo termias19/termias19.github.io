@@ -1,5 +1,165 @@
 <html>
 <head>
+<main id="main">
+<h1 id="title">Job Search Form</h1>
+ 
+  <style>
+    body {
+      background-color: black;
+      text-align: center;
+      min-width: 320px;
+      display: block;
+      margin: 0 auto;
+      
+    }
+    #survey-form {
+      
+      width:900px;
+      margin:0 auto;
+      
+    }
+    .row-tab {
+      display: block;
+      padding-top:20px;
+      text-align:center;
+    }
+    .label-climate {
+      display:inline-block;
+      width: 40%;
+      text-align: right;
+    }
+    
+    .input-climate {
+      display: inline-block;
+      text-align:left;
+      width:48%;
+    }
+    .select-input {
+      display: inline-block;
+      text-align: center;
+      width: 48%;
+      padding-top:20px;
+      
+    }
+    .labels-radio {
+      display:inline-block;
+      width: 40%;
+      text-align: right;
+    }
+    .input-radio {
+      display: inline-block;
+      text-align: left;
+      width: 48%;
+    }
+    .checkbox-labels {
+      display:inline-block;
+      width: 48%;
+      text-align: right;
+      vertical-align:top;
+    }
+    .checkbox-input {
+      display:inline-block;
+      text-align: left;
+      width: 48%;
+    }
+    
+  </style>
+  <div class ="row-tab">
+   <div class="label-climate"
+   <label> Name:</label>
+  </div>
+  <div class="input-climate">
+    <input type="text" placeholder="text">
+</div>
+
+
+  <div class ="row-tab">
+   <div class="label-climate"
+   <label>Email:</label>
+   </div>
+   <div class="input-climate">
+    <input type="email" placeholder="email">
+   </div>
+
+    <div class ="row-tab">
+   <div class="label-climate"
+   <label>Age:</label>
+   </div>
+   <div class="input-climate">
+    <input type="number" placeholder="number">
+   </div>
+ </div>
+
+ <div class="row-tab">
+   <div class="label-select">
+     <label>Which option describes you?</label>
+   </div>
+   <div class="select-input">
+     <select>
+ <option value="Teacher">teacher</option>
+ <option value="Student">Student</option>
+ <option value="Other">Other</option>
+      
+</select>
+     
+   </div>
+    <div class="row-tab">
+      <p>Are you interested in the Green climate deal?</p>
+      <div class="labels-radio">
+      </div>
+      <div class="input-radio">
+        <div>
+        <label> Yes
+        <input type="radio" name="element">
+        </label>
+        </div>
+        <div>
+        <label> No
+        <input type="radio" name="element">
+        </label>
+        </div>
+      </div>
+      <div class="row-tab">
+      <div class="labels-radio">
+      </div>
+        
+        <p>How did you hear about us?</p>  
+      <div class="checkbox-label">
+        
+        <label> Website:
+        <input type="checkbox">
+        </label>
+        </div>
+        
+      <div class="row-tab">
+      <div class="labels-radio">
+      </div>
+      
+        <div class="checkbox-label">
+        <label> Friend:
+        <input type="checkbox">
+        </label>
+        </div>
+      
+     <div class="row-tab">
+      <div class="checkbox-labels">
+      </div>
+      
+        <div class="checkbox-label">
+        <label> Other:
+        <input type="checkbox">
+        </label>
+        </div>
+    
+  </div>     
+    <div class="row-tab">
+      <textarea>Enter your comment here:</textarea>
+       </div>
+       <div class="row-tab">
+       <input type="submit">
+         </div>
+</div>
+</form>
 
 
 </head>
