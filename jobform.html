@@ -18,7 +18,7 @@
       margin:0 auto;
       
     }
-    .row-tab {
+    .column-tab {
       display: block;
       padding-top:20px;
       text-align:center;
@@ -37,7 +37,7 @@
     .select-input {
       display: inline-block;
       text-align: center;
-      width: 48%;
+      width: 60%;
       padding-top:20px;
       
     }
@@ -69,26 +69,28 @@
    <label> Enter Keyword(s): separate with comma or space:</label>
   </div>
   <div class="input-climate">
-    <input type="text" placeholder="text">
+    <input type="text" placeholder="-select all-">
 </div>
-
-
-  <div class ="row-tab">
-   <div class="label-climate"
-   <label>Email:</label>
-   </div>
-   <div class="input-climate">
-    <input type="email" placeholder="email">
-   </div>
-
-    <div class ="row-tab">
-   <div class="label-climate"
-   <label>Age:</label>
-   </div>
-   <div class="input-climate">
-    <input type="number" placeholder="number">
-   </div>
- </div>
+ 
+ <div class="column-tab">
+      <p>Are you interested in the Green climate deal?</p>
+      <div class="labels-radio">
+      </div>
+      <div class="input-radio">
+        <div>
+        <label> Match all keywords
+        <input type="radio" name="element">
+        </label>
+        </div>
+        <div>
+        <label> Match any keywords
+        <input type="radio" name="element">
+        </label>
+        </div>
+      </div>
+      <div class="column-tab">
+      <div class="labels-radio">
+      </div>
 
  <div class="row-tab">
    <div class="label-select">
