@@ -25,7 +25,7 @@
     }
     .label-climate {
       display:inline-block;
-      width: 60%;
+      width: 48%;
       text-align: right;
     }
     
@@ -37,7 +37,7 @@
     .select-input {
       display: inline-block;
       text-align: center;
-      width: 60%;
+      width: 48%;
       padding-top:20px;
       
     }
@@ -132,12 +132,24 @@
       
       
 </select>
-        
+  
+ <script>
+    function validateForm() {
+     var x = document.forms["myform"]["fname"].value;
+     if (x == "") {
+     alert("Name must be filled out");
+     return false;
+  }
+}
+  </script>
+<body>
+  <form name="myform" action="Thankyou.html">
     <div class="row-tab">
       <textarea>Enter your comment here:</textarea>
        </div>
        <div class="row-tab">
-       <input type="search for Jobs">
+       
+       <input type="submit" value="Submit">
          </div>
 </div>
 </form>
