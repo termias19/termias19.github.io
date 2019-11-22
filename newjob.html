@@ -1,0 +1,148 @@
+<html>
+<head>
+<h1 id="title">Job Search</h1>
+<style>
+h1 {
+  text-align: center;
+}
+
+div.blackbox {
+   width: 648px;
+   background-color: black;
+   margin: auto;
+   text-align:left;
+   height: 456px;
+   color: white;
+   font-family: arial;
+   font-size: 1em;
+   line-height: 38px;
+   padding: 10px;
+}
+
+input.ermias {
+
+    width: 600;
+
+}
+select.ermias{
+   width: 600px;
+
+}
+row-tab {
+
+   display: block;
+   padding-top: 50px;
+}
+</style>
+</head>
+
+<body> 
+<div class="blackbox">
+<div class ="ermias">
+Enter Keyword(s): separate with comma or space:<input type="text"="keyword" class="ermias">
+
+</div>
+<div class="input-radio">
+      
+  <div>
+       
+ <label> Match all keywords
+       
+ <input type="radio" name="element">
+       
+ </label>
+     
+   </div>
+     
+   <div>
+     
+   <label> Match any keywords
+   
+     <input type="radio" name="element">
+      
+  </label>
+    
+    </div>
+
+<form>
+Select Category:<input type="text"="keyword" class="ermias">
+
+<select name="dropdownbox" class="ermias">
+<option>teacher</option>
+<option>Director of share affairs</option>
+<option>Supervisor</option>
+<option>Student</option>
+<option>Management</option>
+<option>Custodial</option>
+<option>Librarian</option>
+
+</select>
+<form>
+Select Location:<input type="text"="keyword" class="ermias">
+
+<select name="dropdownbox" class="ermias">
+<option>Baltimore</option>
+<option>Cleveland</option>
+<option>Columbus</option>
+<option>Bluffton</option>
+<option>Lima</option>
+<option>Findlay</option>
+<option>New york</option>
+
+</select>
+<form>
+Select Position:<input type="text"="keyword" class="ermias">
+
+<select name="dropdownbox" class="ermias">
+<option>Cafe server</option>
+<option>Director</option>
+<option>Noodle maker</option>
+<option>Advisor</option>
+<option>Dean</option>
+<option>Catering</option>
+<option>Helper</option>
+
+</select>
+
+ <script>
+  
+  function validateForm() {
+  
+   var x = document.forms["myform"]["fname"].value;
+    
+   if (x == "") {
+    
+   alert("Name must be filled out");
+    
+   return false;
+ 
+  }
+
+}
+  
+ </script>
+
+<body>
+ 
+ <form name="myform" action="Thankyou.html">
+   
+  <div class="ermias">
+   
+   <textarea>Enter your resume here:</textarea>
+     
+   </div>
+      
+   <div class="ermias">
+       
+ 
+   <input type="submit" value="Search for Job">
+    
+
+     </div>
+
+</div>
+
+</form>
+</div>
+</head>
+</html>
