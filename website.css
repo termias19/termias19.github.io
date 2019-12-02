@@ -1,59 +1,32 @@
-*
-{
-    margin: 0;
-    padding: 0;
+<style>
+h1 {
+  text-align: center;
 }
-
-header
-{ 
-      background-image: url(moon1.jpg);
-      height: 150vh;
-      background-size: cover;
-      background-position: center;
-      background-color: grey;
+div.blackbox {
+   width: 648px;
+   background-color: black;
+   margin: auto;
+   text-align:left;
+   height: 456px;
+   color: white;
+   font-family: arial;
+   font-size: 1em;
+   line-height: 38px;
+   padding: 10px;
 }
-
-.nav-bar
-{
-    background: rgb(0, 0, 0, 0.5)
-    height: 80px;
-    
+input.ermias {
+    width: 600;
+    height: 36;
 }
-
-.moon1{
-    margin: 10px 50px;
-    height: 60px;
-    
+select.ermias{
+   width: 600px;
+   height: 38;
 }
-
-.menu{
-    float: right;
-    list-style: none;
-    margin: 20px;
-    
+row-tab {
+   display: block;
+   padding-top: 50px;
 }
-
-.menu li a{
-    display: inline-block;
-    margin: 10px 5px;
-}
-
-.menu li a{
-      text-decoration: none;
-      color: #fff;
-      padding: 5px 10px;
-      font-family: sans-serif;
-      letter-spacing: 2px;
-      border: 1px solid #fff;
-
-}
-
-.menu li a:hover{
-    background: #fff;
-    transition: .4s;
-    color: #000;
-   
-}
+</style>
     
     
     
