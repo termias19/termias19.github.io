@@ -2,7 +2,7 @@
 h1 {
   text-align: center;
 }
-div.blackbox {
+div.website {
    width: 648px;
    background-color: black;
    margin: auto;
@@ -12,7 +12,7 @@ div.blackbox {
    font-family: arial;
    font-size: 1em;
    line-height: 38px;
-   padding: 10px;
+   padding: 40px;
 }
 input.ermias {
     width: 600;
