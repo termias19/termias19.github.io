@@ -1,37 +1,162 @@
-<main id="main">
-<h1 id="title">Emperor Menelik II</h1>
-<p>The king who defended his country from colonization</p>
-  
-<div id = "img-div">
+<html>
 <style>
-  body {
-    background-color: white;
-    text-align: center;
-    min-width: 320px;
-   
-  }
-   
-  
-    
-  </style>
-  <img id = "image" src = "http://2.bp.blogspot.com/-0rhP1YjAtOc/UBBc6Olmk2I/AAAAAAAAAJ8/KVTfYYnq9-E/s320/ma.jpg" alt ="Emperor Menelik II"
-       </img>
-           <p id = "img-caption"> Emperor Menelik II: The king who defended his country from colonization in the battle of Adwa.</p>
-  
-        <p>Menelik II GGCB, GCMG (Ge'ez: ዳግማዊ ምኒልክ; Dagmäwi Menelik]; baptised as Sahle Maryam; 17 August 1844 – 12 December 1913) was Emperor of Ethiopia from 1889 to his death in 1913 and Negus (King) of Shewa (1866–89).</p>
-        <p>At the height of his internal power and external prestige, the process of territorial expansion and creation of the modern empire-state was completed by 1898, which expanded the Ethiopian Empire to the extent of the historic Aksumite Empire.</p>
-        <p>Menelik was also remembered for leading Ethiopian troops against the Kingdom of Italy in the First Italo-Ethiopian War, where Menelik scored a decisive victory at the Battle of Adwa.</p>
-  
-         <p>Ethiopia was transformed under Emperor Menelik: the major signposts of modernisation with the help of key ministerial advisors, such as Gäbre-Heywät Baykädañ, were put in place. Externally, Menelik’s victory over the Italian invaders earned him great fame: following the Battle of Adwa, recognition of Ethiopia's independence by external powers was expressed in terms of diplomatic representation at his court and delineation of Ethiopia's boundaries with the adjacent colonies.</p>
-         <p>Menelik expanded his kingdom to the south and east, into Kaffa, Sidama, Wolayta and other kingdoms.</p>
-         <p>He is widely called "Emiye Menelik" in Ethiopia for his forgiving nature and his unselfish deeds for the poor.</p>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
-         <p>Later in his reign, Menelik established the first Cabinet of Ministers to help in the administration of the Empire, appointing trusted and widely respected nobles and retainers to the first Ministries.</p>
-         <p>These ministers would remain in place long after his death, serving in their posts through the brief reign of Lij Iyasu and into the reign of Empress Zauditu. They also played a key role in deposing Lij Iyasu.</p>
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
 
-        <p> He was of multiethnic background from Shewan aristocrat father and a noble mother (Ejigayehu Lemma Adyamo), Sahle Maryam, who later became known as Menelik, was born in Angolalla. He was the son of Negus Haile Melekot of Shewa who had fathered him at the age of 18 before inheriting the throne</p>
-        <p> On March 1, 1896, the two nation: Italian forces and the Ethiopian troops clashed at the battle ground of Adwa, where Ethiopians won a devastating victory.</p>
-  
-        <a href = "https://en.wikipedia.org/wiki/Menelik_II" target ="_blank" id = "tribute-link"> For more information on Wikipedia</a>
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
  
-       </div>
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+<h2>Modal Signup Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
